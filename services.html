@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+h1 {
+    color: #2f80ed;
+}
+
+p {
+    color: #555;
+}
+
+/* Header Section */
+.header {
+    padding: 40px 20px;
+    background-color: #2f80ed;
+    color: white;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-image: url('https://your-background-image-url.com'); /* Use your image URL */
+    background-size: cover;
+    background-position: center;
+}
+
+.service-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card h3 {
+    color: #2f80ed;
+}
+
+.service-card i.icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: #2f80ed;
+}
+
+/* Footer Section */
+.footer {
+    padding: 20px;
+    background-color: #2f80ed;
+    color: white;
+}
+
+.footer p {
+    margin: 0;
+}
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1 style="color:Black;">Services</h1>
+    </header>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="service-card">
+            <i class="icon">&#128187;</i> <!-- Web Development Icon -->
+            <h3>Web Development</h3>
+            <p>We build responsive and modern websites tailored to your business needs.</p>
+        </div>
+        <div class="service-card">
+            <i class="icon">&#9993;</i> <!-- Email Development Icon -->
+            <h3>Email Development</h3>
+            <p>Professional email templates designed for marketing campaigns and customer outreach.</p>
+        </div>
+        <div class="service-card">
+            <i class="icon">&#128187;</i> <!-- Web Designer Icon -->
+            <h3>Web Designer</h3>
+            <p>Creative web design that offers seamless user experiences and eye-catching visuals.</p>
+        </div>
+        <div class="service-card">
+            <i class="icon">&#128295;</i> <!-- Maintenance Icon -->
+            <h3>Maintenance</h3>
+            <p>Regular maintenance services to ensure your website is secure and up to date.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Contact us to learn more about our services!</p>
+    </footer>
+
+</body>
+
+</html>

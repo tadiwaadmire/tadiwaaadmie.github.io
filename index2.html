@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 5 Fast Food Restaurants</title>
+    <style>
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f8f8f8;
+    color: #333;
+    scroll-behavior: smooth;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(to right, #ff6e7f, #bfe9ff);
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px #ff6e7f;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #f2f2f2;
+}
+
+.scroll-btn {
+    padding: 10px 20px;
+    background: white;
+    color: #ff6e7f;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+section#restaurants {
+    padding: 50px 20px;
+    background: #fff;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ff6e7f;
+    margin-bottom: 20px;
+}
+
+.restaurant-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.restaurant {
+    background: #f0f0f0;
+    padding: 20px;
+    width: 30%;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.restaurant:hover {
+    transform: translateY(-10px);
+}
+
+.restaurant h3 {
+    color: #ff6e7f;
+    font-size: 1.5rem;
+}
+
+.restaurant p {
+    margin-top: 10px;
+}
+
+.restaurant a {
+    color: #bfe9ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.restaurant a:hover {
+    color: #ff6e7f;
+}
+
+footer {
+    background: #ff6e7f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .restaurant-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .restaurant {
+        width: 80%;
+    }
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Top 5 Fast Food Restaurants</h1>
+        <p>Explore the top fast food restaurants across the world and visit their official websites!</p>
+        <a href="#restaurants" class="scroll-btn">Discover More</a>
+    </header>
+
+    <section id="restaurants">
+        <h2>List of Restaurants</h2>
+        <div class="restaurant-list">
+            <div class="restaurant">
+                <h3>1. McDonald's</h3>
+                <p>Visit <a href="https://www.mcdonalds.com" target="_blank">McDonald's</a></p>
+            </div>
+            <div class="restaurant">
+                <h3>2. Burger King</h3>
+                <p>Visit <a href="https://www.bk.com" target="_blank">Burger King</a></p>
+            </div>
+            <div class="restaurant">
+                <h3>3. KFC</h3>
+                <p>Visit <a href="https://www.kfc.com" target="_blank">KFC</a></p>
+            </div>
+            <!-- Repeat similar blocks for each restaurant -->
+            <div class="restaurant">
+                <h3>4. Subway</h3>
+                <p>Visit <a href="https://www.subway.com" target="_blank">Subway</a></p>
+            </div>
+            <div class="restaurant">
+                <h3>5. Taco Bell</h3>
+                <p>Visit <a href="https://www.tacobell.com" target="_blank">Taco Bell</a></p>
+            </div>
+            <!-- Add more restaurants here... up to 20 -->
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Fast Food Guide. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
